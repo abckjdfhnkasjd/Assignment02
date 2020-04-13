@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Issue Tracker- App</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script>
+        class Car {
+          constructor(brand) {
+            this.carname = brand;
+          }
+          present() {
+            return "I have a " + this.carname;
+          }
+        }
+    </script>
+</head>
+<body>
+   <table border="1">
+        <tr>
+            <td height="25px">
+                <h1 class="appTitle">Project Tracker App using [Vanilla Js + HTML + CSS]</h1>
+            </td>
+        </tr>
+        <tr>
+            
+            <td height="400px" valign="top">
+                <div class="container">
+                    <br/>
+                    <div><p>Project Details</p></div>
+                    <div>
+                        <input type="number" id="projectId" placeholder="Enter Project Id" style="width:150px">
+                        <input type="text" id="projectName" placeholder="Pleace Enter Project Name" style="width:200px">
+                        <input type="text" id="projectDescription" placeholder="Pleace Enter Project Description" style="width:200px">
+                        <input type="text" id="projectStatus" placeholder="Pleace Enter Project Status" style="width:200px">
+                        <button type="button" onClick="viewHandler.onAddProject()" >Add Project</button>
+                        <br/>
+                        <button type="button" onClick="viewHandler.displayProjectList()" style="margin-top:10px">View Project List</button>
+                        <br/>
+                        <button type="button" onClick="viewHandler.checkProjectCount()" style="margin-top:10px">Check Number Of Record</button>
+                    </div>
+                <br/>    
+                </div>
+                <hr/>
+                    <table border="1" id="projectList">
+                        <thead><tr><th>Id</th><th>Name</th><th>Description</th><th>Status</th></thead>
+                        <tbody id="tbody">
+                            <tr><td colspan="4" style="text-align: center">No Record to Display</td></tr>
+                        </tbody>
+                    </table>
+                <div>
+                    <p id="check"></p>
+                </div>
+                
+            </td>
+            
+        </tr>
+        <tr>
+            <td height="20px">&reg; Developed by :  Pankaj Sharma</td>
+        </tr>
+    </table>
+    
+    <script type="text/javascript" src="js/MyConsole.js"></script>
+    <script type="application/javascript" src="js/assignment02.js"></script>
+</body>
+</html>
